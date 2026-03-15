@@ -1,0 +1,35 @@
+---
+
+### 2. `.gitignore`
+Create a file named `.gitignore` in your **root directory** (the same level as your `backend` and `frontend` folders). This will keep your repository clean and secure.
+
+```text
+# Prerequisites
+node_modules/
+dist/
+build/
+.DS_Store
+
+# Environments
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+.env
+
+# Databases
+*.sqlite3
+*.db
+
+# Editor folders
+.vscode/
+.idea/

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth transitions for theme switching */
+* {
+  @apply transition-all duration-200;
+}
+
+/* Base styles and the Background Image Strategy */
+body {
+  @apply min-h-screen bg-gray-50 text-gray-900;
+  
+  /* The linear gradient overlay is the secret. */
+  /* We use a white overlay in light mode. */
+  background-image: linear-gradient(to bottom, rgba(249, 250, 251, 0.95), rgba(249, 250, 251, 0.9)), 
+                    url('./assets/background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+}
+
+/* Dark mode override for the overlay */
+html.dark body {
+  @apply bg-gray-950 text-gray-100;
+  
+  /* We use a dark charcoal overlay in dark mode. */
+  background-image: linear-gradient(to bottom, rgba(17, 24, 39, 0.95), rgba(17, 24, 39, 0.98)), 
+                    url('./assets/background.jpg');
+}
+
+/* Glassmorphism utility we will use */
+.glass {
+  @apply bg-white/60 dark:bg-gray-900/60 backdrop-blur-xl border border-gray-100 dark:border-gray-800 rounded-3xl shadow-sm;
+}
