@@ -16,4 +16,4 @@ def get_db():
     try:
         yield db
     finally:
-        db.close
+        db.close() #This small bracket caused me Internal Server Error !!! LOL
