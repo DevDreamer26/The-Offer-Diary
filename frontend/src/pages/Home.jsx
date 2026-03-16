@@ -67,9 +67,9 @@ export default function Home() {
           {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {postsToShow.map(post => (
-              <Link to={`/post/${post.id}`} key={post.id} className="block transform hover:-translate-y-1 transition-transform">
+              <div  key={post.id} className="block transform hover:-translate-y-1 transition-transform">
                 <PostCard post={post} />
-              </Link>
+              </div>
             ))}
           </div>
 
