@@ -89,7 +89,7 @@ export default function Navbar() {
           {user && (
             <div className="flex items-center gap-3 px-2 py-2 mb-2 border-b border-gray-50 dark:border-gray-800">
               <User className="text-blue-600" size={20} />
-              <span className="font-bold dark:text-white capitalize">{user.username}</span>
+              <Link to={`/profile/${user.username}`} className="font-bold dark:text-white capitalize">{user.username}</Link>
             </div>
           )}
 
