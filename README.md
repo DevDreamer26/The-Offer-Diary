@@ -2,14 +2,31 @@
 
 **The Offer Diary** is a professional full-stack platform designed for job seekers and students to share, discover, and manage real-world interview experiences. It bridges the gap between candidates by providing a community-driven space for interview transparency.
 
-## ✨ Core Features
-- **Secure Authentication:** JWT-based login/registration with Argon2 password hashing.
-- **Dynamic Feed:** Real-time interview experience feed sorted by most recent posts.
-- **Full CRUD:** Logged-in users can Create, Read, Update, and Delete their own diary entries.
-- **Protected Routes:** Secure frontend navigation to prevent unauthorized access.
-- **Public Profiles:** Clickable usernames to view all experiences shared by a specific user, including their contact email.
-- **Search & Filter:** Instant frontend search by company name or job role.
-- **Theme Support:** Fully responsive UI with a polished Dark Mode toggle.
+## 🌟 How It Works: The User Journey
+
+The Offer Diary is built to be intuitive, whether you are here to learn from others or share your own success.
+
+### 🔍 Discover Insights
+When you land on the home feed, you are greeted with the most recent interview stories from around the community. 
+* **Smart Search:** Use the search bar to find specific companies (e.g., "Google") or specific roles (e.g., "Frontend Intern").
+* **Deep Dives:** Click on any diary entry to read the full breakdown of the interview rounds, questions asked, and the candidate's personal "Pro-Tips" for success.
+
+### ✍️ Share Your Story
+Got an offer or went through a grueling interview? Help others by documenting it.
+* **Easy Publishing:** Once logged in, hit the "Write" button to describe your experience.
+* **Formatting Matters:** Your line breaks and paragraphs are preserved, so you can write structured, readable guides for your peers.
+
+### 👤 Build Your Presence
+Every user has a dedicated **Public Profile**. 
+* **Candidate Portfolio:** Click on a username to see all experiences shared by that person. 
+* **Direct Connection:** Profiles display the user's registered email, making it easy for others to reach out for specific advice or networking.
+
+### 🛠️ Manage Your Content
+Your **"My Diary"** page acts as your personal command center.
+* **Control:** You can revisit any of your past stories to update them with new insights or delete them if you no longer wish to share them publicly.
+
+### 🌙 Comfortable Reading
+Whether you're prepping late at night or during the day, the platform supports a polished **Dark Mode** to reduce eye strain during those long study sessions.
 
 ## 🛠️ Tech Stack
 - **Frontend:** React.js, Tailwind CSS, Lucide React, Axios.
@@ -22,7 +39,7 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/DevDreamer26/The-Offer-Diary/
+git clone https://github.com/DevDreamer26/The-Offer-Diary
 cd the-offer-diary
 
 ### 2. Backend Setup
